@@ -8,6 +8,7 @@ const images = {
   boost: require('../Images/boost.png'),
   superLike: require('../Images/super-like.png'),
   rewind: require('../Images/rewind.png'),
+  gear: require('../Images/gear.png'),
 }
 
 export default images
