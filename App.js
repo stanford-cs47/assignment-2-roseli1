@@ -42,10 +42,24 @@ export default class App extends React.Component {
           <Image style={styles.profile_pic}
           source={Images.harold} />
           <View style={styles.bio} >
-            <Text style={styles.name}>Harold,</Text>
-            <Text style={styles.age}>65</Text>
+            <Text
+              style={styles.name }>
+              {this.state.name}
+            </Text>
+            <Text
+              style={styles.name}>
+              ,
+              </Text>
+
+            <Text
+              style={styles.age}>
+              {this.state.age}
+            </Text>
           </View>
-          <Text style={styles.occupation}>Internet meme</Text>
+          <Text
+            style={styles.occupation} >
+             {this.state.occupation}
+          </Text>
 
 
         </View>
@@ -129,8 +143,8 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     borderWidth: 1,
     borderColor: '#c5c5c5',
-    borderBottomLeftRadius: 10,
-    borderBottomRightRadius: 10
+    borderBottomLeftRadius: 12,
+    borderBottomRightRadius: 12
   },
   profile_pic: {
     // ensures that the profile image shows up square on devices
